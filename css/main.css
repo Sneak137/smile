@@ -1,0 +1,591 @@
+@import url(css/bootstrap.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 14, ../scss/base/_reset.scss */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, cite,
+em, img, q,
+small, strong,
+b, i,
+ol, ul, li,
+fieldset, form, label, legend, article, aside,
+figure, figcaption, footer, header, nav, section, time {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, ../scss/base/_reset.scss */
+article, aside, figcaption, figure,
+footer, header, nav, section {
+  display: block;
+}
+
+/* line 27, ../scss/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../scss/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/*  1600px = 100% width */
+/*.menu {
+	background: red;
+	@media (min-width: @screen-sm-min) { 
+		background: blue;
+	}
+
+	@media (min-width: @screen-md-min) { ... }
+}*/
+/* width: 100%;   content-width: 1400px; */
+/* Tablet-width: 700px */
+/* Phone-width: 320px */
+/* line 5, ../scss/base/_base.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 9, ../scss/base/_base.scss */
+body, html {
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 16, ../scss/base/_base.scss */
+.clearfix {
+  height: auto;
+}
+
+/* line 20, ../scss/base/_base.scss */
+.left {
+  float: left;
+}
+
+/* line 24, ../scss/base/_base.scss */
+.right {
+  float: right;
+}
+
+/* line 28, ../scss/base/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 34, ../scss/base/_base.scss */
+a, .logo {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 37, ../scss/base/_base.scss */
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* -----> HEADER <----- */
+/* line 43, ../scss/base/_base.scss */
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  text-transform: uppercase;
+}
+
+/* line 51, ../scss/base/_base.scss */
+.logo {
+  padding: 14px 8px;
+  padding-right: 0;
+  background-color: #000;
+  color: #fff;
+  float: left;
+  margin-left: 14.3%;
+  letter-spacing: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: .7;
+}
+
+/* line 64, ../scss/base/_base.scss */
+.menu-icon {
+  color: #fff;
+  float: right;
+  margin-right: 14.3%;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: 9px 0;
+}
+
+/* -----> CAROUSEL <----- */
+/* line 78, ../scss/base/_base.scss */
+.carousel {
+  position: relative;
+}
+
+/* line 82, ../scss/base/_base.scss */
+.carousel-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+/* line 91, ../scss/base/_base.scss */
+.carousel-title p {
+  word-spacing: 10px;
+}
+/* line 95, ../scss/base/_base.scss */
+.carousel-title h1 {
+  font-size: 53px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+/* -----> INTRO-TEXT <----- */
+/* line 105, ../scss/base/_base.scss */
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+/* line 109, ../scss/base/_base.scss */
+.intro-text h1 {
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 42px;
+  padding-top: 32px;
+}
+/* line 115, ../scss/base/_base.scss */
+.intro-text h1 span {
+  font-weight: 700;
+}
+/* line 120, ../scss/base/_base.scss */
+.intro-text p {
+  padding: 0 10px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+/* line 125, ../scss/base/_base.scss */
+.intro-text p span {
+  font-weight: 600;
+}
+/* line 130, ../scss/base/_base.scss */
+.intro-text p:last-child {
+  margin-bottom: 32px;
+}
+/* line 134, ../scss/base/_base.scss */
+.intro-text .divider:after {
+  content: '';
+  display: block;
+  width: 40px;
+  border-bottom: 1px solid #000;
+  margin: 20px auto 0;
+}
+
+/* -----> QUOTE-CAROUSEL <----- */
+/* line 145, ../scss/base/_base.scss */
+.quote-carousel {
+  font-weight: 700;
+  line-height: 21px;
+}
+/* line 149, ../scss/base/_base.scss */
+.quote-carousel blockquote {
+  background-color: #ffddd5;
+  padding: 65px 40px 35px;
+}
+/* line 154, ../scss/base/_base.scss */
+.quote-carousel cite {
+  font-weight: 300;
+  padding-top: 30px;
+  display: block;
+}
+@media (min-width: 700px) {
+  /* line 161, ../scss/base/_base.scss */
+  .quote-carousel img, .quote-carousel blockquote {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* -----> QUOTE-GALLERY <----- */
+/* line 171, ../scss/base/_base.scss */
+.quote-gallery h1 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 34px;
+  padding: 0 30px;
+}
+/* line 178, ../scss/base/_base.scss */
+.quote-gallery .divider:after {
+  content: '';
+  display: block;
+  width: 40px;
+  border-bottom: 1px solid #000;
+  margin: 20px 0 0;
+}
+/* line 186, ../scss/base/_base.scss */
+.quote-gallery blockquote {
+  border: 1px solid #e2e2e2;
+  padding: 23px 30px 29px;
+}
+/* line 190, ../scss/base/_base.scss */
+.quote-gallery blockquote h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+/* line 198, ../scss/base/_base.scss */
+.quote-gallery blockquote p {
+  font-weight: 400;
+}
+/* line 202, ../scss/base/_base.scss */
+.quote-gallery blockquote cite {
+  display: block;
+  margin-top: 22px;
+}
+
+/* line 209, ../scss/base/_base.scss */
+.quotes-container {
+  margin-top: 43px;
+  text-align: center;
+}
+/* line 213, ../scss/base/_base.scss */
+.quotes-container a {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  margin: 36px 0 39px;
+}
+/* line 223, ../scss/base/_base.scss */
+.quotes-container cite {
+  font-style: italic;
+}
+
+/* -----> LOVE-QUOTE <----- */
+/* line 230, ../scss/base/_base.scss */
+.love-bg {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+/* line 236, ../scss/base/_base.scss */
+.love-bg blockquote {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+/* line 244, ../scss/base/_base.scss */
+.love-bg p {
+  font-weight: 700;
+  font-size: 16px;
+}
+/* line 249, ../scss/base/_base.scss */
+.love-bg cite {
+  font-weight: 400;
+  font-size: 10px;
+  margin-top: 10px;
+  display: block;
+}
+/* line 256, ../scss/base/_base.scss */
+.love-bg span {
+  text-decoration: underline;
+}
+
+/* -----> PRINTS <----- */
+/* line 263, ../scss/base/_base.scss */
+.prints {
+  position: relative;
+}
+/* line 266, ../scss/base/_base.scss */
+.prints figure {
+  position: relative;
+}
+/* line 270, ../scss/base/_base.scss */
+.prints .print-title {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  max-width: 560px;
+}
+/* line 277, ../scss/base/_base.scss */
+.prints h1 {
+  font-size: 24px;
+  padding: 32px 30px 11px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 284, ../scss/base/_base.scss */
+.prints h2 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+/* line 290, ../scss/base/_base.scss */
+.prints .divider:after {
+  content: '';
+  display: block;
+  width: 40px;
+  border-bottom: 1px solid #fff;
+  margin: 30px 0 0;
+}
+/* line 298, ../scss/base/_base.scss */
+.prints .main-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+}
+/* line 308, ../scss/base/_base.scss */
+.prints .call-to-action {
+  position: absolute;
+  z-index: 5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 560px;
+}
+/* line 323, ../scss/base/_base.scss */
+.prints blockquote {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  transform: translateY(-50%);
+  margin: 0 0 0 8.3%;
+}
+/* line 330, ../scss/base/_base.scss */
+.prints blockquote p {
+  font-style: italic;
+  font-family: 'Times new roman', Serif;
+  font-weight: 700;
+}
+/* line 336, ../scss/base/_base.scss */
+.prints blockquote cite {
+  margin: 10px 0 0 0;
+  font-family: Georgia, Serif;
+  font-size: 12px;
+  display: block;
+}
+
+/* -----> DOUBLE <----- */
+/* line 347, ../scss/base/_base.scss */
+.double {
+  width: 50%;
+  max-width: 330px;
+}
+/* line 351, ../scss/base/_base.scss */
+.double .left, .double .right {
+  text-align: center;
+}
+
+/* line 356, ../scss/base/_base.scss */
+.pic-one h2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+
+/* line 367, ../scss/base/_base.scss */
+.pic-two h2 {
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/* line 375, ../scss/base/_base.scss */
+.pic-two h2 span {
+  font-size: 19px;
+}
+
+/* line 380, ../scss/base/_base.scss */
+.container-btn {
+  background-color: #eaeef1;
+  clear: both;
+  padding: 22px 0;
+}
+
+/* line 386, ../scss/base/_base.scss */
+.browse-button {
+  padding: 17px 22px 17px 18px;
+  display: block;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 44px;
+}
+
+/* -----> FOOTER <----- */
+/* line 402, ../scss/base/_base.scss */
+footer h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 0 29px;
+  background-color: #eaeef1;
+  border-bottom: 2px solid #d9d9d9;
+  margin: 0;
+}
+/* line 411, ../scss/base/_base.scss */
+footer h1 span {
+  font-weight: 700;
+}
+/* line 416, ../scss/base/_base.scss */
+footer nav h1:first-child {
+  border-top: 2px solid #d9d9d9;
+}
+/* line 420, ../scss/base/_base.scss */
+footer .footer-nav ul, footer address p, footer form, footer p span {
+  display: none;
+}
+
+/* line 428, ../scss/base/_base.scss */
+.social-media {
+  padding: 38px 0 43px;
+  text-align: center;
+}
+
+/* line 433, ../scss/base/_base.scss */
+.social-media li {
+  background: url(../images/social.png) no-repeat;
+  height: 24px;
+  margin: 0 8px;
+}
+
+/* line 439, ../scss/base/_base.scss */
+.social-media li:first-child {
+  margin-left: 0;
+}
+
+/* line 443, ../scss/base/_base.scss */
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+/* line 447, ../scss/base/_base.scss */
+.social-media ul {
+  /*width: 87.5%;
+  margin: 0 auto;*/
+  display: inline-block;
+}
+
+/* line 456, ../scss/base/_base.scss */
+li.facebook {
+  width: 11px;
+}
+
+/* line 460, ../scss/base/_base.scss */
+li.twitter {
+  width: 23px;
+  background-position: -10px 0;
+}
+
+/* line 465, ../scss/base/_base.scss */
+li.linkedin {
+  width: 23px;
+  background-position: -33px 0;
+}
+
+/* line 469, ../scss/base/_base.scss */
+li.youtube {
+  width: 23px;
+  background-position: -57px 0;
+}
+
+/* line 474, ../scss/base/_base.scss */
+li.googleplus {
+  width: 27px;
+  background-position: -82px 0;
+}
+
+/* line 479, ../scss/base/_base.scss */
+li.pinterest {
+  width: 16px;
+  background-position: -110px 0;
+}
+
+/* line 484, ../scss/base/_base.scss */
+li.instagram {
+  width: 22px;
+  background-position: -128px 0;
+}
+
+/* line 489, ../scss/base/_base.scss */
+li.email {
+  width: 23px;
+  background-position: -152px 0;
+}
+
+/* line 494, ../scss/base/_base.scss */
+.footer-text p {
+  margin: 0 7.5%;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 500, ../scss/base/_base.scss */
+.footer-text {
+  background-color: #eaeef1;
+  padding: 26px 0 28px;
+}
+
+/*.menu {
+	background: red;
+	@media (min-width: @screen-sm-min) { 
+		background: blue;
+	}
+
+	@media (min-width: @screen-md-min) { ... }
+}*/
+/* width: 100%;   content-width: 1400px; */
+/* Tablet-width: 700px */
+/* Phone-width: 320px */
